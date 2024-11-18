@@ -21,4 +21,19 @@ public class RegistrationRestController {
         return registrationServices.retriveRegistration(numRegistration);
 
     }
+
+    //skier
+    @PutMapping("/assignToSkieur/{numSkier}")
+    public Registration addAndAssignToSkieur(@RequestBody Registration registration, @PathVariable Long numSkier){
+        return registrationServices.addRegistration(registration);
+
+    }
+    //course
+    @PutMapping("/assignToCourse/{numCourse}")
+    public Registration addAndAssignToCourse(@RequestBody Registration registration, @PathVariable Long numCourse){
+        return registrationServices.addRegistration(registration);
+
+    }
+
+
 }

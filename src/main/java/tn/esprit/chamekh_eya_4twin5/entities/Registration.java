@@ -25,4 +25,44 @@ public class Registration implements Serializable  {
 
     @ManyToOne
     Course course;
+
+    public int getIdRegistration() {
+        return idRegistration;
+    }
+
+    public void setIdRegistration(int idRegistration) {
+        this.idRegistration = idRegistration;
+    }
+
+    public Long getNumRegistration() {
+        return numRegistration;
+    }
+
+    public void setNumRegistration(Long numRegistration) {
+        this.numRegistration = numRegistration;
+    }
+
+    public int getNumWeek() {
+        return numWeek;
+    }
+
+    public void setNumWeek(int numWeek) {
+        this.numWeek = numWeek;
+    }
+
+    public Skier getSkier() {
+        return skier;
+    }
+
+    public void setSkier(Skier skier) {
+        this.skier = skier;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
+    }
 }

@@ -2,7 +2,9 @@ package tn.esprit.chamekh_eya_4twin5.entities;
 
 import jakarta.persistence.*;
 
-public enum Color {
+import java.io.Serializable;
+
+public enum Color implements Serializable {
             GREEN, BLUE, RED, BLACK
 
     }

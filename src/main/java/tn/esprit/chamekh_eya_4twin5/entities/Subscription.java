@@ -23,7 +23,7 @@ public class Subscription implements Serializable {
     private LocalDate endDate;
     private Float price;
     @Enumerated(EnumType.STRING)
-TypeSubscription subscription;
+    private TypeSubscription typesubscription;
 
 
 
